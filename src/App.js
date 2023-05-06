@@ -1,24 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from 'react'
+import TOdoLIST from "./Components/TOdoLIST";
+import TOdoFORM from "./Components/TOdoFORM";
+import appStyle from './App.css'
 
-function App() {
+
+
+const dummyLIST= [
+  {
+    id:1,
+    content:"code"
+  },
+  {
+    id:2,
+    content:"play ball"
+  },
+  {
+    id:3,
+    content:"pray"
+  },
+  {
+    id:4,
+    content:"Appion"
+  }
+
+]
+
+  function App() {
+
+    const [list, setList] = useState (dummyLIST);
+     
+    const FormUPDATER = (UPDATEDlist) => {
+      setList(() => {
+        return [UPDATEDlist,...list];
+      })
+    }
+    console.log(list);
+  
+    
   return (
+  
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='header'>React To Do List App</h1>
+    
+      <TOdoFORM Updater={FormUPDATER}/>
+      <TOdoLIST dummyDATA={list}/>
+      
+      
     </div>
+
+
   );
 }
 

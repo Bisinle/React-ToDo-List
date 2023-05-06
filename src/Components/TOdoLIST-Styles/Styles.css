@@ -1,0 +1,117 @@
+.App{
+  background-color: #333;
+  width: 70vw;
+  margin:auto;
+  padding: 20px ;
+ 
+  box-shadow:0px 0px 10px 5px #008b8b;
+}
+.header{
+  color: wheat;
+  width: 80%;
+  margin: 30px auto;
+
+
+}
+.TOdoLIST-UL{
+  
+  padding: 0px;
+  margin: 10px 0 ;
+  width: 100%;
+ 
+ 
+ 
+
+}
+.TOdoLIST-LI{
+  list-style-type: none;
+  font-size: 1.3rem;
+  background-color: #444;
+  border-radius: 20px;
+  padding: 10px ;
+  color: wheat;
+  position: relative;
+  height: 20px;
+  width: calc(100%);
+  margin-bottom: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  
+ 
+}
+
+.TOdoLIST-DIV{
+ 
+}
+.form{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  width: 100%;
+  margin: 20px 0;
+  
+
+  
+  
+
+}
+
+.input{
+  background-color: #444;
+  color: wheat;
+  height: 40px;
+  width: calc(80%);
+  border: 2px solid #008b8b;
+  border-bottom-right-radius: 0px 0px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-left: 10px;
+  font-size: 1.3rem;
+
+
+
+}
+.btn{
+  width: calc(20%);
+  border-radius:10px ;
+  border-top-left-radius: 50px 0px;
+  border-bottom-left-radius: 50px 0px;
+  border:2px solid  #008b8b;
+  background-color: #008b8b;
+
+
+}
+span{
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  background-color: #008b8b;
+  width: 50px;
+  text-align: center;
+  
+
+  height: 40px;
+
+  
+}
+span:hover{
+  background-color: wheat;
+}
+.edit{
+  color: #ad0b3c;
+  right: 40px;
+  
+  
+  
+
+}
+.delete{
+  color: #ad0b3c;
+  right: 0px;
+    border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
