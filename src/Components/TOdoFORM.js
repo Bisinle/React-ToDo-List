@@ -20,30 +20,23 @@ export default function TOdoFORM({Updater}) {
   function listADD(event){
     event.preventDefault();
      //randomly generating an ID for the ID section
-  let generatedID = Math.floor(Math.random()*1000)
-  
+  let generatedID = Math.floor(Math.random()*1000)  
     const capturedValues = {
       id:generatedID,
       content: enteredTask
-
     }
-  
     if( enteredTask ==='' ){
       alert("Invalid input!!!")
     }
     else{
       Updater(capturedValues);
-    }
-    
-    
-  
-  
-    setEnteredTask('')
-
-  
-  
-  
+    } 
+    setEnteredTask('') 
   }
+
+
+
+
   return (
     <>
     <form onSubmit={listADD} className='form'>
