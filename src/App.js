@@ -24,14 +24,14 @@ const dummyLIST= [
   }
 
 ]
-
+//we might not really need to do all of this mutliple components
   function App() {
 
     const [list, setList] = useState (dummyLIST);
      
     const FormUPDATER = (UPDATEDlist) => {
       setList(() => {
-        return [...list, UPDATEDlist];
+        return [UPDATEDlist,...list];
       })
     }
     // console.log(list);
