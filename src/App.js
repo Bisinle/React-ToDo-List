@@ -31,10 +31,10 @@ const dummyLIST= [
      
     const FormUPDATER = (UPDATEDlist) => {
       setList(() => {
-        return [UPDATEDlist,...list];
+        return [...list, UPDATEDlist];
       })
     }
-    console.log(list);
+    // console.log(list);
   
     
   return (

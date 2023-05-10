@@ -18,8 +18,8 @@ export default function TOdoFORM({Updater}) {
  
 
   function listADD(event){
-    event.prevccdentDefault();
-     //randomely generating an ID for the ID section
+    event.preventDefault();
+     //randomly generating an ID for the ID section
   let generatedID = Math.floor(Math.random()*1000)
   
     const capturedValues = {

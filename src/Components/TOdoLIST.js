@@ -2,15 +2,19 @@ import React from 'react'
 import Styles from './TOdoLIST-Styles/Styles.css'
 import {useState, useEffect} from 'react'
 export default function TOdoLIST({dummyDATA}) {
-  const [reducedList, setReducedList] = useState([])
+  const [reducedList, setReducedList] = useState(dummyDATA)
   
   //function to delete any chosen element from the list
   function removeList(id){
   let newlyReducedList = reducedList.filter((l)=>l.id !==id)
  setReducedList(newlyReducedList);   
+
  }
 
- //useEffect to initialise the porps inot the useState
+ console.log(reducedList);
+ 
+
+ //useEffect to initialise the porps into the useState
   useEffect(()=>{
     setReducedList(dummyDATA) 
   },[dummyDATA])
