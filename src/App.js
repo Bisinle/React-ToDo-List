@@ -39,7 +39,7 @@ const dummyLIST= [
     const ListUpdater =(meh)=>{
       setList(meh)
     }
-      console.log(list);
+     
   return (
   
     <div className="App">
