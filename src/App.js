@@ -24,7 +24,7 @@ const dummyLIST= [
   }
 
 ]
-//we might not really need to do all of this mutliple components
+
   function App() {
 
     const [list, setList] = useState (dummyLIST);
