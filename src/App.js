@@ -36,8 +36,8 @@ const dummyLIST= [
     }
   
   
-    const ListUpdater =(meh)=>{
-      setList(meh)
+    const ListUpdater =(newlyReducedList)=>{
+      setList(newlyReducedList)
     }
      
   return (
