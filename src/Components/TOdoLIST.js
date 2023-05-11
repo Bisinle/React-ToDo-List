@@ -10,10 +10,8 @@ export default function TOdoLIST({dummyDATA,funky}) {
   function removeList(id){
   let newlyReducedList = reducedList.filter((l)=>l.id !==id)
  setReducedList(newlyReducedList);   
-
 //updating the main list on the app.js
 funky (newlyReducedList)
-
  }
  
  
