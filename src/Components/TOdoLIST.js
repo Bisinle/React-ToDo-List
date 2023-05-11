@@ -1,17 +1,20 @@
 import React from 'react'
 import Styles from './TOdoLIST-Styles/Styles.css'
 import {useState, useEffect} from 'react'
-export default function TOdoLIST({dummyDATA}) {
-  const [reducedList, setReducedList] = useState(dummyDATA)
+
+
+export default function TOdoLIST({dummyDATA,funky}) {
+  const [reducedList, setReducedList] = useState([dummyDATA])
   
   //function to delete any chosen element from the list
   function removeList(id){
   let newlyReducedList = reducedList.filter((l)=>l.id !==id)
  setReducedList(newlyReducedList);   
+ 
+funky (newlyReducedList)
 
  }
-
- console.log(reducedList);
+ 
  
 
  //useEffect to initialise the porps into the useState
@@ -22,7 +25,7 @@ export default function TOdoLIST({dummyDATA}) {
 
   let listDisplay = reducedList.map((list) =>{
     return (
-        <li className='TOdoLIST-LI' key={list.id}> 
+      <li className='TOdoLIST-LI' key={list.id}> 
         {list.content} 
 
           <span className='edit'>

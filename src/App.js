@@ -34,16 +34,19 @@ const dummyLIST= [
         return [UPDATEDlist,...list];
       })
     }
-    // console.log(list);
   
-    
+  
+    const ListUpdater =(meh)=>{
+      setList(meh)
+    }
+      console.log(list);
   return (
   
     <div className="App">
       <h1 className='header'>React To Do List App</h1>
     
       <TOdoFORM Updater={FormUPDATER}/>
-      <TOdoLIST dummyDATA={list}/>
+      <TOdoLIST dummyDATA={list} funky ={ListUpdater}/>
       
       
     </div>
